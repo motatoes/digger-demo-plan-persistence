@@ -18,6 +18,7 @@ jobs:
         uses: diggerhq/digger@v0.1.30
         with:
           setup-aws: false
+          disable-locking: true
           upload-plan-destination: github
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
