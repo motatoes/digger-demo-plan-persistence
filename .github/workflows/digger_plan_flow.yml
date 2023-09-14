@@ -9,6 +9,11 @@ on:
     if: contains(github.event.comment.body, 'digger')
   workflow_dispatch:
 
+permissions:
+  statuses: write
+  checks: write
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
