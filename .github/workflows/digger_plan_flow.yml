@@ -17,6 +17,7 @@ jobs:
       - name: digger run
         uses: diggerhq/digger@v0.1.30
         with:
+          setup-aws: false
           upload-plan-destination: github
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
